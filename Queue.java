@@ -6,7 +6,7 @@ public class Queue{
     Queue(int s){
         this.size = s;//队列尺寸
         this.queue = new int[size];//队列本体
-        this.head = -1;//最后一个元素
+        this.head = -1;//第一个元素之前，队列的头位置
         this.tail = 0;//第一个元素
     }
     public boolean isEmpty(){//检验队列是否为空
