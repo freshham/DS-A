@@ -14,7 +14,7 @@ public class QuickSort{
         x[i] = x[j];
         x[j] = k;
     }
-    void quickSort(int[] x,int p,int r){//迭代步骤
+    void quickSort(int[] x,int p,int r){//迭代步骤，每次迭代可根据所选中的主元即标记将原始数组分成两个子数组，并在两个子数组上重复快排
         if(p < r){//刚才愚蠢的我身为愚蠢的人类啊竟然忘记了加上限制条件．．．
             int q = Random_Partition(x, p, r);//老子才是本体哇！
             quickSort(x,p,q - 1);
